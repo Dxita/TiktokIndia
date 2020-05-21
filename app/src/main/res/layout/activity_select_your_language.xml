@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clr_white"
+    android:padding="@dimen/size_15sp"
+    tools:context=".SelectYourLanguageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20sp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_35sp"
+            android:text="@string/text_select_language"
+            android:textStyle="bold"
+            android:textColor="@color/clr_black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_14sp"
+            android:text="@string/text_see_video_made"
+            android:layout_marginTop="@dimen/size_5sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_40sp"
+            android:paddingLeft="@dimen/size_20sp"
+            android:paddingRight="@dimen/size_20sp" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_gray_button"
+        android:text="@string/text_next"
+        android:textAllCaps="false"
+        android:textSize="@dimen/size_16sp"
+        android:textColor="@color/clr_btn_text"/>
+</RelativeLayout>

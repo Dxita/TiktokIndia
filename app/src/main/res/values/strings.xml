@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TikTok India</string>
+
+    <!-- Common Texts -->
+    <string name="text_next">Next</string>
+
+    <!-- Dashboard Activity -->
+    <string name="text_following">Following</string>
+    <string name="text_for_you">For You</string>
+
+    <!-- Select Your Language Activity -->
+    <string name="text_select_language">Select Language</string>
+    <string name="text_see_video_made">See video made in these languages</string>
+    <string name="text_hindi">Hindi</string>
+
+    <!-- Select Your Gender Activity -->
+    <string name="text_choose_your_gender">Choose your gender</string>
+    <string name="text_if_you_choose_to_provide">If you choose to provide this information to us, we may use it to peronalize content for you</string>
+    <string name="text_female">Female</string>
+    <string name="text_male">Male</string>
+    <string name="text_non_binary">Non-binary</string>
+    <string name="text_prefer_not_to_say">Prefer not to say</string>
+</resources>

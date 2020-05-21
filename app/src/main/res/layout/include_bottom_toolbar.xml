@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/home_rl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_40sp">
+
+            <ImageView
+                android:layout_width="@dimen/size_25sp"
+                android:layout_height="@dimen/size_25sp"
+                android:src="@drawable/home_white_border_icon"
+                android:layout_margin="@dimen/size_2sp"
+                android:layout_centerInParent="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_2sp"
+                android:background="@color/clr_white"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_rl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_40sp">
+
+            <ImageView
+                android:layout_width="@dimen/size_25sp"
+                android:layout_height="@dimen/size_25sp"
+                android:src="@drawable/search_white_border_icon"
+                android:layout_margin="@dimen/size_2sp"
+                android:layout_centerInParent="true"/>
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_2sp"
+                android:background="@color/clr_white"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_rl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_40sp"
+            android:padding="@dimen/size_2sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_icon"
+                android:layout_margin="@dimen/size_2sp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notification_rl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_40sp">
+
+            <ImageView
+                android:layout_width="@dimen/size_25sp"
+                android:layout_height="@dimen/size_25sp"
+                android:src="@drawable/notifications_icon"
+                android:layout_margin="@dimen/size_2sp"
+                android:layout_centerInParent="true"/>
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_2sp"
+                android:background="@color/clr_white"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_rl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_40sp">
+
+            <ImageView
+                android:layout_width="@dimen/size_25sp"
+                android:layout_height="@dimen/size_25sp"
+                android:src="@drawable/profile_icon"
+                android:layout_margin="@dimen/size_2sp"
+                android:layout_centerInParent="true"/>
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_2sp"
+                android:background="@color/clr_white"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
