@@ -10,8 +10,8 @@
         android:orientation="horizontal">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="@dimen/size_70sp"
-            android:layout_height="@dimen/size_70sp"
+            android:layout_width="@dimen/size_50sp"
+            android:layout_height="@dimen/size_50sp"
             android:src="@mipmap/ic_launcher_round"/>
 
         <LinearLayout
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="@dimen/size_15sp"
-            android:paddingRight="@dimen/size_50sp">
+            android:paddingRight="@dimen/size_20sp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -61,8 +61,9 @@
 
                 <View
                     android:layout_width="@dimen/size_2sp"
-                    android:layout_height="@dimen/size_20sp"
-                    android:background="@android:color/darker_gray"/>
+                    android:layout_height="@dimen/size_15sp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="@dimen/size_3sp"/>
                 <TextView
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -74,7 +75,7 @@
 
         <ImageView
             android:layout_width="@dimen/size_70sp"
-            android:layout_height="@dimen/size_100sp"
+            android:layout_height="@dimen/size_80sp"
             android:background="@color/clr_magenta"/>
 
     </LinearLayout>

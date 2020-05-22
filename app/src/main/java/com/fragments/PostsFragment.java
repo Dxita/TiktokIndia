@@ -39,8 +39,8 @@ public class PostsFragment extends AppBaseFragmentHelper {
 
     private void setRecyclerView(){
         recycler_view.setHasFixedSize(true);
-        recycler_view.setLayoutManager(new GridLayoutManager(getContext(),3));
-        postsAdapter = new PostsAdapter(getContext());
+        recycler_view.setLayoutManager(new GridLayoutManager(getActivity(),3));
+        postsAdapter = new PostsAdapter(getActivity());
         recycler_view.setAdapter(postsAdapter);
     }
 
@@ -66,7 +66,7 @@ public class PostsFragment extends AppBaseFragmentHelper {
 
         @Override
         public int getItemCount() {
-            return 20;
+            return 5;
         }
 
         public class ViewHolder extends RecyclerView.ViewHolder {
