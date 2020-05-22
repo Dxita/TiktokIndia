@@ -1,4 +1,4 @@
-package com.helpers;
+package com.appbasehelpers;
 
 import android.content.Intent;
 import android.os.Build;
@@ -21,10 +21,12 @@ import com.dev.SearchActivity;
 import com.dev.SelectYourGenderActivity;
 import com.dev.SelectYourLanguageActivity;
 import com.mainfragments.BottomToolbarFragment;
+import com.mainfragments.ToolbarFragment;
 
 public class AppBaseActivityHelper extends AppCompatActivity implements View.OnClickListener {
 
     BottomToolbarFragment bottomToolbarFragment;
+    ToolbarFragment toolbarFragment;
 
     public AppBaseActivityHelper getInstance(){
         AppBaseActivityHelper appBaseActivityHelper = new AppBaseActivityHelper();
@@ -40,6 +42,12 @@ public class AppBaseActivityHelper extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         hideToolbar();
         setStatusBarColor();
+
+        Fragment toolbar_fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_toolbar_id);
+        if (toolbar_fragment instanceof  Fragment){
+            toolbarFragment = (ToolbarFragment)toolbar_fragment;
+            toolbarFragment.initializeComponents();
+        }
 
         Fragment bottom_fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_bottom_toolbar_id);
         if (bottom_fragment instanceof Fragment){

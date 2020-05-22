@@ -3,7 +3,7 @@ package com.dev;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.helpers.AppBaseActivityHelper;
+import com.appbasehelpers.AppBaseActivityHelper;
 
 public class SplashScreenActivity extends AppBaseActivityHelper {
 

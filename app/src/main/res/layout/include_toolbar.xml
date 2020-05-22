@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_45sp"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:background="@color/clr_white">
+
+    <LinearLayout
+        android:id="@+id/profile_toolbar_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/size_10sp"
+        android:paddingLeft="@dimen/size_10sp"
+        android:paddingBottom="@dimen/size_10sp"
+        android:paddingTop="@dimen/size_8sp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/size_20sp"
+            android:layout_height="@dimen/size_20sp"
+            android:src="@drawable/back_arrow_icon"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_name_surname"
+            android:gravity="center"
+            android:textColor="@color/clr_black"
+            android:textSize="@dimen/size_16sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_20sp"
+            android:src="@drawable/menu_dots_icon"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/notification_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/size_10sp"
+        android:paddingLeft="@dimen/size_10sp"
+        android:paddingBottom="@dimen/size_10sp"
+        android:paddingTop="@dimen/size_8sp"
+        android:gravity="center_vertical">
+
+        <Spinner
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/text_name_surname"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/clr_black"
+            android:textSize="@dimen/size_16sp"
+            android:entries="@array/toolbar_array_list"
+            android:layout_marginLeft="@dimen/size_90sp"
+            android:layout_marginRight="@dimen/size_90sp"/>
+
+        <ImageView
+            android:id="@+id/message_iv"
+            android:layout_width="@dimen/size_25sp"
+            android:layout_height="@dimen/size_25sp"
+            android:src="@drawable/msg_icon"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/clr_black"
+        android:layout_alignParentBottom="true"/>
+
+</LinearLayout>

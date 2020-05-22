@@ -1,10 +1,8 @@
 package com.dev;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-import com.helpers.AppBaseActivityHelper;
+import com.appbasehelpers.AppBaseActivityHelper;
 
 public class DashboardActivity extends AppBaseActivityHelper {
 

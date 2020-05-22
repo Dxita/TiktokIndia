@@ -2,30 +2,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="@android:color/black">
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/clr_white"/>
 
     <LinearLayout
+        android:id="@+id/horizontal_ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/size_5sp">
         <RelativeLayout
             android:id="@+id/home_rl"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="@dimen/size_40sp">
+            android:layout_height="@dimen/size_50sp">
 
             <ImageView
+                android:id="@+id/home_iv"
                 android:layout_width="@dimen/size_25sp"
                 android:layout_height="@dimen/size_25sp"
                 android:src="@drawable/home_white_border_icon"
                 android:layout_margin="@dimen/size_2sp"
-                android:layout_centerInParent="true"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/size_2sp"
-                android:background="@color/clr_white"
-                android:layout_alignParentBottom="true"/>
+                android:layout_centerHorizontal="true"
+                android:tint="@color/clr_app_gray"/>
+
+            <TextView
+                android:id="@+id/home_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/size_5sp"
+                android:layout_below="@id/home_iv"
+                android:textSize="@dimen/size_10sp"
+                android:textColor="@color/clr_app_gray"
+                android:text="@string/text_home"/>
 
         </RelativeLayout>
 
@@ -33,20 +48,28 @@
             android:id="@+id/search_rl"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="@dimen/size_40sp">
+            android:layout_height="@dimen/size_50sp">
 
             <ImageView
+                android:id="@+id/search_iv"
                 android:layout_width="@dimen/size_25sp"
                 android:layout_height="@dimen/size_25sp"
                 android:src="@drawable/search_white_border_icon"
                 android:layout_margin="@dimen/size_2sp"
-                android:layout_centerInParent="true"/>
-            <View
-                android:visibility="gone"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/size_2sp"
-                android:background="@color/clr_white"
-                android:layout_alignParentBottom="true"/>
+                android:layout_centerHorizontal="true"
+                android:tint="@color/clr_app_gray"/>
+
+            <TextView
+                android:id="@+id/search_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/size_5sp"
+                android:layout_below="@id/search_iv"
+                android:textSize="@dimen/size_10sp"
+                android:textColor="@color/clr_app_gray"
+                android:text="@string/text_discover"/>
 
         </RelativeLayout>
 
@@ -54,15 +77,13 @@
             android:id="@+id/add_rl"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="@dimen/size_40sp"
-            android:padding="@dimen/size_2sp">
-
+            android:layout_height="@dimen/size_50sp"
+            android:padding="@dimen/size_10sp">
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/add_icon"
-                android:layout_margin="@dimen/size_2sp"
-                android:layout_centerInParent="true"/>
+                android:layout_centerHorizontal="true" />
 
         </RelativeLayout>
 
@@ -70,20 +91,28 @@
             android:id="@+id/notification_rl"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="@dimen/size_40sp">
+            android:layout_height="@dimen/size_50sp">
 
             <ImageView
+                android:id="@+id/notification_iv"
                 android:layout_width="@dimen/size_25sp"
                 android:layout_height="@dimen/size_25sp"
                 android:src="@drawable/notifications_icon"
                 android:layout_margin="@dimen/size_2sp"
-                android:layout_centerInParent="true"/>
-            <View
-                android:visibility="gone"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/size_2sp"
-                android:background="@color/clr_white"
-                android:layout_alignParentBottom="true"/>
+                android:layout_centerHorizontal="true"
+                android:tint="@color/clr_app_gray"/>
+
+            <TextView
+                android:id="@+id/notification_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/size_5sp"
+                android:layout_below="@id/notification_iv"
+                android:textSize="@dimen/size_10sp"
+                android:textColor="@color/clr_app_gray"
+                android:text="@string/text_inbox"/>
 
         </RelativeLayout>
 
@@ -91,20 +120,28 @@
             android:id="@+id/profile_rl"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="@dimen/size_40sp">
+            android:layout_height="@dimen/size_50sp">
 
             <ImageView
+                android:id="@+id/profile_iv"
                 android:layout_width="@dimen/size_25sp"
                 android:layout_height="@dimen/size_25sp"
                 android:src="@drawable/profile_icon"
                 android:layout_margin="@dimen/size_2sp"
-                android:layout_centerInParent="true"/>
-            <View
-                android:visibility="gone"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/size_2sp"
-                android:background="@color/clr_white"
-                android:layout_alignParentBottom="true"/>
+                android:layout_centerHorizontal="true"
+                android:tint="@color/clr_app_gray"/>
+
+            <TextView
+                android:id="@+id/profile_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/size_5sp"
+                android:layout_below="@id/profile_iv"
+                android:textSize="@dimen/size_10sp"
+                android:textColor="@color/clr_app_gray"
+                android:text="@string/text_me"/>
 
         </RelativeLayout>
 

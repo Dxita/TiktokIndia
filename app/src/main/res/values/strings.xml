@@ -20,4 +20,38 @@
     <string name="text_male">Male</string>
     <string name="text_non_binary">Non-binary</string>
     <string name="text_prefer_not_to_say">Prefer not to say</string>
+
+    <!-- Bottom Sheet -->
+    <string name="text_home">Home</string>
+    <string name="text_discover">Discover</string>
+    <string name="text_inbox">Inbox</string>
+    <string name="text_me">Me</string>
+
+    <!-- Toolabr  -->
+    <string name="text_name_surname">Name surname</string>
+    <string name="text_username">Name.NS</string>
+    <string name="text_2356">2356</string>
+    <string name="text_6k">6k</string>
+    <string name="text_12_m">1M</string>
+    <string name="text_followers">Followers</string>
+    <string name="text_likes">Likes</string>
+    <string name="text_follow">Follow</string>
+    <string name="text_dummy">Lorem ipsum\ndolor sit amet consectetur\nadipiscing elit.</string>
+    <string-array name="toolbar_array_list">
+        <item>All activity</item>
+    </string-array>
+
+    <!-- Search Activity -->
+    <string name="text_hash">#</string>
+    <string name="text_what_i_eat">whatieatinaday</string>
+    <string name="text_tranding_hashtag">Trending Hashtag</string>
+    <string name="text_915_m">915.1M</string>
+
+    <!-- Notification Activity -->
+    <string name="text_user">User</string>
+    <string name="text_and">and</string>
+    <string name="text_125_others">125 Others</string>
+    <string name="text_liked_your_comment">liked your comment. 15m</string>
+    <string name="text_dummy_noti">Jhonson Smith: Lorem ipsum dolor sit amet</string>
+
 </resources>

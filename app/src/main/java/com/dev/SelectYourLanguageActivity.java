@@ -1,7 +1,6 @@
 package com.dev;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -12,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.helpers.AppBaseActivityHelper;
+import com.appbasehelpers.AppBaseActivityHelper;
 
 public class SelectYourLanguageActivity extends AppBaseActivityHelper {
 

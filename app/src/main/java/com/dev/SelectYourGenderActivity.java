@@ -1,7 +1,6 @@
 package com.dev;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.helpers.AppBaseActivityHelper;
+import com.appbasehelpers.AppBaseActivityHelper;
 
 import java.util.ArrayList;
 

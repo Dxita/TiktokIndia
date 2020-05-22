@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/size_40sp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/size_120sp"
+            android:layout_height="@dimen/size_120sp"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_username"
+            android:layout_marginTop="@dimen/size_5sp"
+            android:textSize="@dimen/size_18sp"
+            android:textColor="@color/clr_black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size_15sp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_2356"
+                    android:textSize="@dimen/size_25sp"
+                    android:textColor="@color/clr_black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_following"
+                    android:textSize="@dimen/size_14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/size_5sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_6k"
+                    android:textSize="@dimen/size_25sp"
+                    android:textColor="@color/clr_black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_followers"
+                    android:textSize="@dimen/size_14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/size_5sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_12_m"
+                    android:textSize="@dimen/size_25sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/clr_black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_likes"
+                    android:textSize="@dimen/size_14sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_15sp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="@dimen/size_180sp"
+                android:layout_height="wrap_content"
+                android:background="@color/clr_magenta"
+                android:text="@string/text_follow"
+                android:textAllCaps="false"
+                android:textColor="@color/clr_white"
+                android:textSize="@dimen/size_16sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_border_gray_rectangle" />
+
+            <ImageView
+                android:layout_width="@dimen/size_50sp"
+                android:layout_height="@dimen/size_50sp"
+                android:src="@drawable/go_to_insta_icon"
+                android:layout_marginLeft="@dimen/size_8sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_dummy"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/size_8sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/clr_black"
+            android:layout_marginTop="@dimen/size_30sp"/>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50sp"
+                app:tabMode="fixed"
+                app:tabIndicatorColor="@color/clr_black"
+                app:tabIndicatorFullWidth="false"
+                app:tabGravity="fill"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</RelativeLayout>
